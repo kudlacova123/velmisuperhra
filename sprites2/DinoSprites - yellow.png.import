@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ci1n34q4rcpof"
-path="res://.godot/imported/world_tileset.png-8b3dc0eb27b141bfe097cdfc0d6186a3.ctex"
+uid="uid://bbcw3m4prucap"
+path="res://.godot/imported/DinoSprites - yellow.png-f5e37824764031446d2aa7a3caf18532.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/world_tileset.png"
-dest_files=["res://.godot/imported/world_tileset.png-8b3dc0eb27b141bfe097cdfc0d6186a3.ctex"]
+source_file="res://sprites2/DinoSprites - yellow.png"
+dest_files=["res://.godot/imported/DinoSprites - yellow.png-f5e37824764031446d2aa7a3caf18532.ctex"]
 
 [params]
 

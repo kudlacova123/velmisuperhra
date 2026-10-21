@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3sjopisxba2w"
-path="res://.godot/imported/knight.png-c78c026709c2736971ffc0a39338542e.ctex"
+uid="uid://djje7jqgcyfav"
+path="res://.godot/imported/DinoSprites - green.png-52ba22684e98026753b10d0b300857e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/knight.png"
-dest_files=["res://.godot/imported/knight.png-c78c026709c2736971ffc0a39338542e.ctex"]
+source_file="res://sprites2/DinoSprites - green.png"
+dest_files=["res://.godot/imported/DinoSprites - green.png-52ba22684e98026753b10d0b300857e5.ctex"]
 
 [params]
 
