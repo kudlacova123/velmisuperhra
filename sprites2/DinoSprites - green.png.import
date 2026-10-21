@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bsadi80ua7w80"
-path="res://.godot/imported/DinoSprites - blue.png-60bb4f0813258113e140ff07c5374653.ctex"
+uid="uid://djje7jqgcyfav"
+path="res://.godot/imported/DinoSprites - green.png-52ba22684e98026753b10d0b300857e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/DinoSprites - blue.png"
-dest_files=["res://.godot/imported/DinoSprites - blue.png-60bb4f0813258113e140ff07c5374653.ctex"]
+source_file="res://sprites2/DinoSprites - green.png"
+dest_files=["res://.godot/imported/DinoSprites - green.png-52ba22684e98026753b10d0b300857e5.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=28 format=3 uid="uid://7lbf7lx13kio"]
 
 [ext_resource type="Script" uid="uid://dvoe5silod6rq" path="res://scripts/player_a.gd" id="1_8hq5l"]
-[ext_resource type="Texture2D" uid="uid://bsadi80ua7w80" path="res://sprites/DinoSprites - blue.png" id="1_hkjw5"]
+[ext_resource type="Texture2D" uid="uid://bsadi80ua7w80" path="res://sprites2/DinoSprites - blue.png" id="1_hkjw5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8hq5l"]
 atlas = ExtResource("1_hkjw5")
@@ -199,9 +199,9 @@ script = ExtResource("1_8hq5l")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_c108u")
-animation = &"jump"
+animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.17355153
+frame_progress = 0.98993105
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_t0teb")
