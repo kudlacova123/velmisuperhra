@@ -27,19 +27,20 @@ func _physics_process(delta: float) -> void:
 		animated_sprite.flip_h = true
 	
 	#prepinani animaci
-	#if is_on_floor():
-		#if direction == 0:
-			#if Input.is_action_pressed("sprint a"):
-				#animated_sprite.play("sprint")
-				#is_rolling = true
-				#
-				#
-			##elif is_rolling == false:
-			#animated_sprite.play("idle")
-		#else:
-			#animated_sprite.play("run")
-	#else:
-		#animated_sprite.play("jump")
+	if not is_on_floor():
+		# Když je postava ve vzduchu (např. skáká nebo padá)
+		animated_sprite.play("jump_a") # případně "fall_a", pokud ji máš
+	else:
+		# Když je postava na zemi
+		if direction == 0:
+			# Stojí na místě
+			if Input.is_action_pressed("sprint a"):
+				animated_sprite.play("sprint_a")
+			else:
+				animated_sprite.play("idle_a") # Zde byla chyba, předtím tu byl běh
+		else:
+			# Pohybuje se do strany
+			animated_sprite.play("run_a") # Zde byl předtím skok
 		
 	#if Input.is_action_pressed("down") and is_on_floor():
 		#animated_sprite.play("crouch")

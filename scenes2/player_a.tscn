@@ -1,6 +1,6 @@
 [gd_scene load_steps=28 format=3 uid="uid://7lbf7lx13kio"]
 
-[ext_resource type="Script" uid="uid://dvoe5silod6rq" path="res://scripts/player_a.gd" id="1_8hq5l"]
+[ext_resource type="Script" uid="uid://dvoe5silod6rq" path="res://scripts2/player_a.gd" id="1_8hq5l"]
 [ext_resource type="Texture2D" uid="uid://bsadi80ua7w80" path="res://sprites2/DinoSprites - blue.png" id="1_hkjw5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8hq5l"]
@@ -108,7 +108,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_gteg5")
 }],
 "loop": true,
-"name": &"hurt",
+"name": &"hurt_a",
 "speed": 5.0
 }, {
 "frames": [{
@@ -125,7 +125,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_lirqq")
 }],
 "loop": true,
-"name": &"idle",
+"name": &"idle_a",
 "speed": 5.0
 }, {
 "frames": [{
@@ -142,7 +142,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_ufwmp")
 }],
 "loop": true,
-"name": &"jump",
+"name": &"jump_a",
 "speed": 5.0
 }, {
 "frames": [{
@@ -165,7 +165,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_242qk")
 }],
 "loop": true,
-"name": &"run",
+"name": &"run_a",
 "speed": 5.0
 }, {
 "frames": [{
@@ -188,20 +188,21 @@ animations = [{
 "texture": SubResource("AtlasTexture_faf87")
 }],
 "loop": true,
-"name": &"sprint",
+"name": &"sprint_a",
 "speed": 7.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t0teb"]
+size = Vector2(20, 17)
 
 [node name="player a" type="CharacterBody2D"]
 script = ExtResource("1_8hq5l")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_c108u")
-animation = &"idle"
-autoplay = "idle"
-frame_progress = 0.98993105
+animation = &"idle_a"
+autoplay = "idle_a"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 0.5)
 shape = SubResource("RectangleShape2D_t0teb")

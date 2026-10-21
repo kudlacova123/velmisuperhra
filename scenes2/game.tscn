@@ -1,8 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2yiutw7ey0wp"]
+[gd_scene load_steps=4 format=3 uid="uid://b2yiutw7ey0wp"]
 
 [ext_resource type="PackedScene" uid="uid://7lbf7lx13kio" path="res://scenes2/player_a.tscn" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://485ox674nstk" path="res://scenes2/killzone.tscn" id="2_ukgkd"]
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_uwrxv"]
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_skjr6"]
 
 [node name="Game" type="Node2D"]
 
@@ -12,6 +13,7 @@ position = Vector2(0, -21)
 [node name="Camera2D" type="Camera2D" parent="player a"]
 zoom = Vector2(3, 3)
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="player a"]
-position = Vector2(0, 21)
-shape = SubResource("WorldBoundaryShape2D_uwrxv")
+[node name="killzone" parent="." instance=ExtResource("2_ukgkd")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
+shape = SubResource("WorldBoundaryShape2D_skjr6")
