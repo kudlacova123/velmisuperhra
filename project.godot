@@ -11,5 +11,10 @@ config_version=5
 [application]
 
 config/name="velmisuperhra"
+run/main_scene="uid://b2yiutw7ey0wp"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0.97322184, 0, 0.54446536, 1)
